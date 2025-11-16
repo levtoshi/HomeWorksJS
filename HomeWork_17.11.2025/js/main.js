@@ -43,19 +43,27 @@ class RoundedButton extends Button
 
     dropShadow()
     {
-        this.element.style.borderRadius = `0px 5px 5px red`;
+        this.element.style.boxShadow = `0px 5px 5px red`;
     }
 }
 
 const buttons = [
     new Button("Click me", "3px solid black", "white", "blue"),
     new Button("Press here", "3px solid orange", "white", "green"),
-    new Button("Click here", "3px solid blue", "black", "white"),
+    new Button("Click here", "3px solid blue", "black", "white")
+];
+
+const roundedButtons = [
     new RoundedButton("Rounded_1", "3px solid green", "green", "black", 10),
     new RoundedButton("Rounded_2", "3px solid purple", "white", "blue", 20),
-    new RoundedButton("Rounded_3", "3px solid magenta", "white", "orange", 30),
+    new RoundedButton("Rounded_3", "3px solid magenta", "white", "orange", 30)
 ];
 
 for (const button of buttons) {
     button.render();
+}
+
+for (const roundedButton of roundedButtons) {
+    roundedButton.render();
+    roundedButton.dropShadow();
 }
