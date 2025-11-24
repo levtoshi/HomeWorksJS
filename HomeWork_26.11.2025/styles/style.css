@@ -1,0 +1,31 @@
+/* 4 Task */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    
+}
+
+.product-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
